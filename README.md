@@ -1,22 +1,30 @@
 # LUMIÉ — Minimal Skincare Landing Page
 
-A fictional brand landing page created as a Frontend portfolio project.
+A fictional skincare brand landing page created as a Frontend portfolio project.
 
 ## Files
-- `index.html` — semantic page structure
-- `style.css` — responsive styling and CSS-built product artwork
+- `index.html` — semantic structure, SEO metadata, and accessible landmarks
+- `style.css` — responsive styling
 - `script.js` — mobile navigation interactions
+- `assets/*.webp` — optimized versions used on the page
+- `assets/*.jpg` — original image files retained from the author's version
+- `assets/lumie-hero-concept.png` — retained reference asset
 
 ## Run locally
 Open `index.html` in your browser. No build step is required.
 
-## Before publishing in a portfolio
-- Replace `hello@example.com` with an appropriate demo destination or remove the contact link.
-- The testimonials are clearly labeled as sample testimonials; keep them labeled or replace them with non-testimonial content.
-- This is a fictional concept brand, not a real business.
-- Google Fonts are loaded online; system fallbacks are included.
+## Improvements added while preserving the user's version
+- Converted the five displayed images to WebP and retained the original JPGs.
+- Preloaded the hero image and prioritized it.
+- Lazy-loaded below-the-fold images and specified image dimensions.
+- Added SEO title/description and social sharing metadata.
+- Added a keyboard skip link, improved focus visibility, and Escape/outside-click support for the mobile menu.
+- Added reduced-motion support.
+- Clearly labeled testimonials as illustrative demo quotes.
+- Removed the placeholder email address from the CTA.
 
-## Checklist
-- Test at mobile, tablet, and desktop widths.
-- Check keyboard navigation and color contrast.
-- Ensure all links and calls to action behave as expected.
+## Before publishing
+- LUMIÉ is a fictional concept brand, not a real business.
+- Testimonials are illustrative demo copy, not real customer reviews.
+- Add the deployed canonical URL and an absolute Open Graph image URL after deployment.
+- Test mobile/desktop layouts, keyboard navigation, links, and browser console.

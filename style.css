@@ -15,6 +15,8 @@
 html { scroll-behavior: smooth; scroll-padding-top: 88px; }
 body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--sans); line-height: 1.6; }
 a { color: inherit; text-decoration: none; }
+.skip-link { position: absolute; top: .5rem; left: .5rem; z-index: 100; padding: .7rem 1rem; background: var(--ink); color: var(--white); border-radius: .35rem; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { font: inherit; }
 .site-header { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 1rem clamp(1.2rem, 5vw, 5rem); background: rgba(247,242,234,.93); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(91,69,47,.08); }
@@ -106,7 +108,11 @@ h1 em, h2 em { color: var(--brown); font-weight: 400; }
 .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 2rem clamp(1.2rem, 5vw, 5rem); border-top: 1px solid var(--line); }
 .site-footer .brand { font-size: 1rem; }
 .site-footer p, .back-top { color: var(--muted); font-size: .72rem; margin: 0; }
-:focus-visible { outline: 2px solid var(--brown); outline-offset: 4px; }
+:focus-visible { outline: 3px solid var(--brown); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
 @media (max-width: 900px) {
   .site-header { gap: 1rem; }
   .primary-nav { gap: 1rem; }
