@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LUMIÉ — a concept landing page for a minimalist skincare brand.">
+  <meta name="theme-color" content="#f7f2ea">
+  <title>LUMIÉ — Natural Skincare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="LUMIÉ home">
+      <span>LUMIÉ</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="header-cta" href="#products">Explore products <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Thoughtful skincare, everyday</p>
+        <h1>Healthy skin.<br><em>Natural glow.</em></h1>
+        <p class="hero-description">Simple essentials made for your daily ritual. Gentle formulas, considered ingredients, and care that feels good.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#products">Discover the collection <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#benefits">Our philosophy</a>
+        </div>
+        <div class="hero-notes" aria-label="Brand values">
+          <span><b aria-hidden="true">✳</b> Thoughtful ingredients</span>
+          <span><b aria-hidden="true">◇</b> Everyday essentials</span>
+          <span><b aria-hidden="true">♡</b> Kind to your skin</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/hero-products.jpg" alt="LUMIÉ skincare products styled with natural stone, flowers, and greenery">
+      </div>
+    </section>
+
+    <section class="products section-wrap section-pad" id="products">
+      <div class="section-intro">
+        <p class="eyebrow">The essentials</p>
+        <h2>Less, but<br><em>better.</em></h2>
+        <p>Meet the simple steps that make your daily skincare ritual feel special.</p>
+        <a class="text-link" href="#contact">Find your routine <span aria-hidden="true">→</span></a>
+      </div>
+      <article class="product-card">
+        <div class="product-art"><img src="assets/cleanser.jpg" alt="LUMIÉ gentle facial cleanser"></div>
+        <p class="product-type">01 / CLEANSE</p><h3>Gentle Cleanser</h3><p class="product-desc">A fresh start for your skin.</p>
+      </article>
+      <article class="product-card">
+        <div class="product-art"><img src="assets/serum.jpg" alt="LUMIÉ radiant glow serum"></div>
+        <p class="product-type">02 / NOURISH</p><h3>Daily Serum</h3><p class="product-desc">A little extra care, every day.</p>
+      </article>
+      <article class="product-card">
+        <div class="product-art"><img src="assets/moisturizer.jpg" alt="LUMIÉ nourishing moisturizer"></div>
+        <p class="product-type">03 / HYDRATE</p><h3>Soft Cream</h3><p class="product-desc">Comforting, lightweight hydration.</p>
+      </article>
+    </section>
+
+    <section class="philosophy" id="benefits">
+      <div class="philosophy-art">
+        <img src="assets/skincare-lifestyle.jpg" alt="A woman gently applying skincare cream to her cheek">
+      </div>
+      <div class="philosophy-copy">
+        <p class="eyebrow">The LUMIÉ way</p>
+        <h2>Skincare that feels<br><em>like self-care.</em></h2>
+        <p class="body-copy">We believe a good routine doesn't need to be complicated. Just thoughtful essentials, a little consistency, and a moment for yourself.</p>
+        <div class="benefit-grid">
+          <div><span class="benefit-icon">✳</span><b>Thoughtful</b><p>Considered everyday essentials.</p></div>
+          <div><span class="benefit-icon">◌</span><b>Simple</b><p>Easy steps for your routine.</p></div>
+          <div><span class="benefit-icon">♡</span><b>Gentle</b><p>Care designed around comfort.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section-wrap section-pad" id="reviews">
+      <div class="reviews-heading"><p class="eyebrow">Kind words</p><h2>A ritual to look<br><em>forward to.</em></h2></div>
+      <div class="review-card"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“My morning routine feels calmer and more considered.”</blockquote><p class="review-author">— Sample testimonial</p></div>
+      <div class="review-card"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Beautiful, simple essentials that look lovely on my shelf.”</blockquote><p class="review-author">— Sample testimonial</p></div>
+    </section>
+
+    <section class="faq section-wrap section-pad" id="faq">
+      <div><p class="eyebrow">A few details</p><h2>Good to know.</h2></div>
+      <div class="faq-list">
+        <details><summary>Is LUMIÉ a real skincare brand?</summary><p>No. LUMIÉ is a fictional brand created for this portfolio concept.</p></details>
+        <details><summary>Can I buy these products?</summary><p>This is a visual portfolio demo only. The product cards and calls to action do not process orders.</p></details>
+        <details><summary>Is the page mobile-friendly?</summary><p>Yes. The layout adapts to mobile, tablet, and desktop screen sizes.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta section-wrap" id="contact">
+      <div><p class="eyebrow">Make room for a ritual</p><h2>Your daily moment<br>of <em>care.</em></h2></div>
+      <a class="button button-light" href="mailto:hello@example.com">Get in touch <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home"><span>LUMIÉ</span></a>
+    <p>Concept landing page · Portfolio project · Not a real brand</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
